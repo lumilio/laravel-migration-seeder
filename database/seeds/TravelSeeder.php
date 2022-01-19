@@ -16,9 +16,9 @@ class TravelSeeder extends Seeder
         for ($i=0; $i < 3; $i++) { 
             $new_travel = new Travel();
             $new_travel->start_trip = $faker->date();
-            $new_travel->start_trip = $faker->words(2, true);
-            $new_travel->start_trip = $faker->words(2, true);
-            $new_travel->start_trip = $faker->randomFloat(2,0,500);
+            $new_travel->city1 = $faker->words(2, true);
+            $new_travel->city2 = $faker->words(2, true);
+            $new_travel->price= $faker->randomFloat(2,0,500);
             $new_travel->save();
         }
     }
