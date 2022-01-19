@@ -1,0 +1,25 @@
+@use 'bootstrap';
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    font-family: Trebuchet MS, sans-serif;
+}
+
+
+#app_header .container-fluid,
+#app_footer .container-fluid
+{
+    height: 80px;
+    background-image: url('/img/download.png');
+}
+
+
+main .container-fluid
+{
+    height: 500px;
+}
+
