@@ -10,7 +10,7 @@
             <p class='mx-1'>{{$item->city1}}</p>
             <p class='mx-1'>{{$item->city2}}</p>
             <p class='mx-1'>{{$item->start_trip}}</p>
-            <p class='mx-1'>{{$item->price}}</p>        
+            <p class='mx-1'>{{$item->price}} €</p>        
         </div>
     @empty
         <div class='d-flex'>
