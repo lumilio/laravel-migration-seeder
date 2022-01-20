@@ -17,11 +17,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomePageController@index1')->name('homeRoute');
 
-Route::get('/blog', 'PageController@index1')->name('blogRoute');
-Route::get('/blog/{id}', 'PageController@index2')->name('single-blogRoute');
+Route::get('/offers', 'TravelController@index1')->name('travelRoute');
+Route::get('/blog', 'PostController@index1')->name('blogRoute');
 
-Route::get('/offers', 'PageController@index3')->name('blogRoute');
-Route::get('/travel/{id}', 'PageController@index4')->name('single-travelRoute');
+Route::get('/travel/{id}', 'TravelController@index2')->name('single-travelRoute');
+Route::get('/blog/{id}', 'PostController@index2')->name('single-blogRoute');
+
+
 
 
 
