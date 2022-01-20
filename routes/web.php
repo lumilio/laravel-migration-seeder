@@ -18,9 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomePageController@index1')->name('homeRoute');
 
 Route::get('/offers', 'TravelController@index1')->name('travelRoute');
-Route::get('/blog', 'PostController@index1')->name('blogRoute');
+Route::get('/offers/{id}', 'TravelController@index2')->name('single-travelRoute');
 
-Route::get('/travel/{id}', 'TravelController@index2')->name('single-travelRoute');
+
+
+Route::get('/blog', 'PostController@index1')->name('blogRoute');
 Route::get('/blog/{id}', 'PostController@index2')->name('single-blogRoute');
 
 
