@@ -11,6 +11,7 @@ class TravelController extends Controller
         $travels_arrey = Travel::all();
         return view('travels.index',compact('travels_arrey'));
     }
+    
     public function index2($id)
     {
         $travels_arrey = Travel::all();
@@ -22,7 +23,5 @@ class TravelController extends Controller
             abort(404);
         }
     }
-
-
 
 }
