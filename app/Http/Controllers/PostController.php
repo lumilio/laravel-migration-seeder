@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Models\Travel;
+use App\Models\Post; 
 
-class TravelController extends Controller
+class PostController extends Controller
 {
     public function index1()
     {
-        return view('travels.index');
+        return view('posts.index');
     }
     public function index2()
     {
-        return view('travels.show');
+        return view('posts.show');
     }
 }

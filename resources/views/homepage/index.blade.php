@@ -1,10 +1,10 @@
 @extends('layouts.app')
-@section('page-title','second')
+@section('page-title','home')
 
 
 
 @section('content')
 <div class="container-fluid d-flex justify-content-center align-items-center">
-    <a href="{{route('page1')}}">vai a i viaggi disponibili</a>
+    <h3>Consulta il menu in alto per esplorare le sezioni create</h3>
 </div>
 @endsection

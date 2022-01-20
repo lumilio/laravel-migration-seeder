@@ -13,13 +13,34 @@ body{
 #app_header .container-fluid,
 #app_footer .container-fluid
 {
-    height: 80px;
-    background-image: url('/img/download.png');
+    background-color: darkred;
+    min-height: 60px;
+    position: absolute;
 }
 
+#app_header .container-fluid{
+    top: 0;
+}
+#app_footer .container-fluid{
+    bottom: 0;
+}
+
+#app_header .container-fluid .box-menu{
+    padding: 30px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    width: 70px;
+}
+
+#app_header .container-fluid .box-menu:hover{
+    border: 1px solid white;
+    color: darkred;
+    background-color: white;
+}
 
 main .container-fluid
 {
-    height: 500px;
+    height: 100vh;
 }
 

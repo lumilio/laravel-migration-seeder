@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'TravelController@index1')->name('page1');
-Route::get('/blog', 'TravelController@index2')->name('page2');
+
+
+Route::get('/', 'HomePageController@index1')->name('homeRoute');
+
+Route::get('/blog', 'PageController@index1')->name('blogRoute');
+Route::get('/blog/{id}', 'PageController@index2')->name('single-blogRoute');
+
+Route::get('/offers', 'PageController@index3')->name('blogRoute');
+Route::get('/travel/{id}', 'PageController@index4')->name('single-travelRoute');
+
+
+
+
 
