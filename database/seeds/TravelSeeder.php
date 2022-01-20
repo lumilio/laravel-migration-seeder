@@ -53,7 +53,7 @@ class TravelSeeder extends Seeder
         foreach ($travels as $item){
             $_item = new Travel();
             $_item->city1 = $item['city1'];
-            $_item->city2 = $item['city1'];
+            $_item->city2 = $item['city2'];
             $_item->start_trip = $item['start_trip'];
             $_item->photo = $item['photo'];
             $_item->price = $item['price'];

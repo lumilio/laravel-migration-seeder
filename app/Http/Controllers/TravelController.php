@@ -8,7 +8,8 @@ class TravelController extends Controller
 {
     public function index1()
     {
-        return view('travels.index');
+        $travels_arrey = Travel::all();
+        return view('travels.index',compact('travels_arrey'));
     }
     public function index2()
     {

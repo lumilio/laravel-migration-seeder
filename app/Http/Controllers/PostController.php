@@ -7,8 +7,9 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function index1()
-    {
-        return view('posts.index');
+    {   
+        $posts_arrey = Post::all();
+        return view('posts.index',compact('posts_arrey'));
     }
     public function index2()
     {

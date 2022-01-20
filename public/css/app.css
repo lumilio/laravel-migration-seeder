@@ -14284,7 +14284,6 @@ body {
 #app_footer .container-fluid {
   background-color: darkred;
   min-height: 60px;
-  position: absolute;
 }
 
 #app_header .container-fluid {
@@ -14310,5 +14309,37 @@ body {
 }
 
 main .container-fluid {
-  height: 100vh;
+  min-height: 80vh;
+}
+
+.card-travel {
+  border: 2px solid grey;
+  text-decoration: none;
+  color: black;
+}
+
+.card-post {
+  border: 2px solid grey;
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+.card-travel:hover {
+  background-color: darkred;
+  color: white;
+  text-decoration: none;
+  border: 2px solid red;
+}
+
+.card-travel img {
+  width: 200px;
+}
+
+.card-post img {
+  width: 700px;
+}
+
+.card-travel .scadenza {
+  width: 150px;
 }
