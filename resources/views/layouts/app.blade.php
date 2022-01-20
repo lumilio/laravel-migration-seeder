@@ -7,9 +7,6 @@
         <link href="{{asset('css/app.css')}}" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     </head>
-
-
-
     <body>
         @include('partials.header')
         <main id='app_main'>@yield('content')</main>
@@ -17,8 +14,4 @@
         
         <!-- Custom scripts --> @yield('custom-js')
     </body>
-
-
-
-    
 </html>
